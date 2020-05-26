@@ -39,6 +39,6 @@
   * - [ ] 로그인/로그아웃
 
 ---
-## :checkered_flag: 목표
+## :checkered_flag: 목표(Goal)
 최대한 기능들 다 빼고 핵심기능만이라도 완성하기
   
