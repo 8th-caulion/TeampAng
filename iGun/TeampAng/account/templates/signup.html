@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가입하기</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <div class="container">
+        <form action="{%url 'signup'%}" class="login-form" method ="POST">
+            {%csrf_token%}
+
+            <h1>회원가입 </h1>
+            <!-- <h2>Sign Up!</h2> -->
+            <div class="txtb">  
+                ID <input type="text" name="username" placeholder="아이디를 입력하세요" autocomplete="off">
+            </div>
+    
+            <div class="txtb">
+                Password <input type="password"name ="password1" placeholder="비밀번호를 입력하세요" autocomplete="off">
+            </div>  
+            <div class="txtb">
+                Confirm PW :<input name ="password2" placeholder="비밀번호를 한번 더 입력하세요"  type="password" />
+            </div>
+            <br />
+            <input type="submit" value="팀푸앙 시작하기!" Up" class ="logbtn"/>
+        </form>
+        </div>
+</body>
+</html>
